@@ -33,6 +33,7 @@ header{
     width: 50%;
 }
 
+
 .header_child_one h1{
     color: #FFFFFF;
     font-size: 32px;
@@ -41,3 +42,33 @@ header{
 
 
 /* --------------Finshed header style------------------   */
+
+/* --------------Start players style------------------   */
+main{
+    background: #E5E5E5;
+}
+section{
+    padding: 20px 0px;
+}
+
+.player{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    margin: 0px 50px;
+}
+.player_child{
+    background: #FFFFFF;
+    width: 300px;
+    padding: 30px;
+    
+
+}
+.player_child img{
+    width: 300px;
+    height: 256px;
+}
+/* --------------Finshed players style------------------   */
+
