@@ -1,0 +1,43 @@
+/* --------------Poppins font------------------   */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* --------------Poppins font finshed------------------   */
+
+
+/* --------------Start header style------------------   */
+header{
+    font-family: 'Poppins', sans-serif;
+    padding: 50px 120px;
+    background: #2D25A0;
+    /* width: 1440px; */
+}
+.football_news_header{
+    display: flex;
+    /* margin: 50px; */
+}
+.football_news_header button{
+    width: 168px;
+    border: 1px solid black;
+    font-size: 16px;
+    color: #FFFFFF;
+    background: #E02C6D;
+    padding: 10px 0px;
+}
+.football_news_header img{
+    margin-left: 50px;
+    width: 556px;
+    height: 428px;
+   
+}
+.header_child_one{
+    margin-top: 50px;
+    width: 50%;
+}
+
+.header_child_one h1{
+    color: #FFFFFF;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* --------------Finshed header style------------------   */
