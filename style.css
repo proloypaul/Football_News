@@ -2,6 +2,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 /* --------------Poppins font finshed------------------   */
 
+/* add animation in button  */
+@keyframes animation_btn{
+    0%{
+        background: #E02C6D;
+        color: #FFFFFF;
+    }
+    50%{
+        background: salmon;
+        color: #2D25A0;
+        font-weight: bold;
+    }
+    100%{
+        background: palevioletred;
+        color: #E02C6D;
+        font-weight: bold;
+    }
+    
+}
+/* Finshed animation in button */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x:hidden;
+}
 
 /* --------------Start header style------------------   */
 header{
@@ -9,28 +35,39 @@ header{
     padding: 50px 120px;
     background: #2D25A0;
     /* width: 1440px; */
+    /* width: 100%; */
 }
+
 .football_news_header{
     display: flex;
-    /* margin: 50px; */
 }
 .header_child_one button{
     width: 168px;
     border: 1px solid black;
     font-size: 16px;
+    font-weight: bold;
     color: #FFFFFF;
     background: #E02C6D;
+    border: none;
+    border-radius: 5px;
     padding: 10px 0px;
+    animation: animation_btn 5s ease-in 0.5s infinite alternate;
+    animation-play-state: running;
 }
+
 .football_news_header img{
     margin-left: 50px;
     width: 556px;
     height: 428px;
-   
+    
+}
+.football_news_header img:hover{
+    transform: scale(0.90);
+    transition: transform 2s ease-in-out 0.1s; 
 }
 .header_child_one{
     margin-top: 50px;
-    width: 50%;
+    width: auto;
 }
 i{
     margin-left: 10px;
@@ -39,44 +76,143 @@ i{
 
 .header_child_one h1{
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bold;
 }
-
+.header_child_two{
+    width: 50%;
+}
 
 /* --------------Finshed header style------------------   */
 
 /* --------------Start players style------------------   */
 main{
+    /* margin: 0 auto; */
     background: #E5E5E5;
+    width:100%;
 }
 section{
     padding: 20px 0px;
 }
 
-
+.players{
+    width: 100%;
+    margin: 10px 100px;
+}
 .player{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+    grid-template-columns: repeat(3, 250px);
+    grid-column-gap: 40px;
     grid-row-gap: 20px;
-    /* width: 100%; */
-    margin: 0px 50px;
+    width: 800px;
+    /* margin: 0px 100px; */
 }
 .player_child{
     background: #FFFFFF;
-    width: 300px;
-    padding: 30px;
+    width: 250px;
+    padding: 10px;
     
 
 }
 .player_child img{
-    width: 300px;
-    height: 256px;
+    /* width: 300px; */
+    /* height: 256px; */
+    width: 250px;
+    height: 200px;
 }
 .player_child h1{
     font-size: 28px;
     font-weight: bold;
 }
+.player_child:hover img{
+    transform:scale(0.90);
+    transition: transform 2s ease-in-out 0.1s;
+}
 /* --------------Finshed players style------------------   */
+
+
+/* --------------Start footer style------------------   */
+footer{
+    width: 483px;
+    height: 213px;
+    margin: 0 auto;
+    width:100%;
+}
+.container{
+    text-align: center;
+
+}
+.container img{
+    width: 483px;
+    height: 110px;
+}
+
+/* --------------Finshed footer style------------------   */
+
+
+
+
+
+
+
+
+
+/* --------------Start media queries------------------   */
+
+
+@media only screen and (max-width: 688px) {
+    header{
+        padding: 20px 10px;
+    }
+    .football_news_header{
+        width: 100%;
+        display: block;
+    }
+    .header_child_two img{
+        margin-top: 50px;
+        width: 329px;
+        height: 259px;
+    }
+    .player{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .container{
+        width: 100%;
+    }
+    .container img{
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width:688px) and (max-width:768px) {
+    .football_news_header{
+        width: 100%;
+        display: block;
+
+    }
+    .header_child_two img{
+        margin-top: 50px;
+        width: 400px;
+        height: 300px;
+    }
+    .players{
+        margin: 10px 100px;
+    }
+    .player{
+        width: 100%;
+        grid-template-columns: repeat(2, 250px);
+        
+    }
+    .footer{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 
