@@ -41,7 +41,7 @@ header{
 .football_news_header{
     display: flex;
 }
-.header_child_one button{
+button{
     width: 168px;
     border: 1px solid black;
     font-size: 16px;
@@ -130,6 +130,30 @@ section{
 }
 /* --------------Finshed players style------------------   */
 
+/* --------------Start highlights_match style------------------   */
+#bg_add{
+    background-image: url(images/bg_pic.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: contain;
+    background-position: center;
+}
+.highlights_match{
+    margin: 0px 200px;
+    padding-top: 100px;
+}
+.highlights_match h1{
+    color: #FFFFFF;
+    font-size: 40px;
+    font-weight: bold;
+}
+.highlights_match p{
+    font-weight: bold;
+}
+.highlights_match button{
+    margin-top: 50px;
+}
+/* --------------Finshed highlights match style------------------   */
 
 /* --------------Start footer style------------------   */
 footer{
@@ -183,6 +207,9 @@ footer{
     .container img{
         width: 300px;
     }
+    #bg_add{
+        display:none;
+    }
 }
 
 @media only screen and (min-width:688px) and (max-width:768px) {
@@ -203,6 +230,9 @@ footer{
         width: 100%;
         grid-template-columns: repeat(2, 250px);
         
+    }
+    #bg_add{
+        display: none;
     }
     .footer{
         width: 100%;
